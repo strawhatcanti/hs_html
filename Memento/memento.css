@@ -1,0 +1,109 @@
+html,
+body {
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+}
+
+/* filter */
+
+.dead-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 60vw;
+        background-color: white;
+        height: 200%;
+}
+
+.filt {
+        height: 200%;
+        z-index: 3;
+        mix-blend-mode: exclusion;
+        opacity: 0.7;
+        top: 49% !important;
+}
+
+.filt2 {
+        height: 200%;
+        z-index: 3;
+        mix-blend-mode: hard-light;
+        opacity: 0.55;
+        top: 49% !important;
+}
+
+/* orbital */
+
+.bg-anchor {
+        position: absolute;
+        top: 50%;
+        left: 53%;
+}
+
+.binary-star {
+        animation: rotate-cw 40s linear infinite;
+}
+
+.lead {
+        position: absolute;
+        left: -30vmin;
+        top: -5vmin;
+}
+
+.behind {
+        position: absolute;
+        left: 60vmin;
+        top: 20vmin;
+}
+
+.centering {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+/* rings */
+
+.ring {
+        position: absolute;
+        mix-blend-mode: screen;
+        background-image: url("./images/m_car4_al.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        aspect-ratio: 1 / 1;
+}
+
+.big {
+        width: 110vmin;
+        animation: rotate-ccw 65s linear infinite;
+}
+
+.small {
+        width: 55vmin;
+        animation: rotate-ccw 25s linear infinite;
+}
+
+.medium {
+        width: 80vmin;
+        animation: rotate-cw 45s linear infinite;
+}
+
+@keyframes rotate-cw {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+}
+
+@keyframes rotate-ccw {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+}
