@@ -18,7 +18,7 @@ body {
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
-        width: 60vw;
+        width: 42vw;
         background-color: white;
         height: 200%;
 }
@@ -48,19 +48,19 @@ body {
 }
 
 .binary-star {
-        animation: rotate-cw 40s linear infinite;
+        animation: rotate-cw 43s linear infinite;
 }
 
 .lead {
         position: absolute;
-        left: -30vmin;
+        left: -45vmin;
         top: -5vmin;
 }
 
 .behind {
         position: absolute;
-        left: 60vmin;
-        top: 20vmin;
+        left: 45vmin;
+        top: 30vmin;
 }
 
 .centering {
